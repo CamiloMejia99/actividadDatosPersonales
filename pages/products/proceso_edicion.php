@@ -166,6 +166,9 @@
 
 
                         </div>
+                        <div class="card-footer">
+                         <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>
+                      </div>
                       </div>
                     </div>
                   </li>

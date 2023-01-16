@@ -93,7 +93,7 @@
                               <a href="register.php"  class="btn btn-success"> Click aqui para registrar </a>
 
 
-                              <label for="id_categoria">Id</label>
+                            
                               
                               <a href="buscar.php"  class="btn btn-success"> Click aqui para consultar </a>
                             </div><!-- /.row -->
@@ -121,9 +121,9 @@
                                             <tr>
                                               <th>#</th>  
                                               <th>ID</th> 
-                                              <th>P Nombre</th>
+                                              <th>Nombres</th>
 
-                                              <th>P Apellido</th>
+                                              <th>Apellidos</th>
 
                                               <th>Edad</th>
                                               <th>Ciudad</th>

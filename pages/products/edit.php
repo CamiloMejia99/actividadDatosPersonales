@@ -92,6 +92,7 @@
                         </div><!-- /.container-fluid -->
                       </div>
 
+                      
 
 
                       <?php
@@ -115,7 +116,9 @@
                               <!-- form start -->
 
                               
-
+                                <div class="card-footer">
+                                   <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>
+                                </div>
                               
             
 

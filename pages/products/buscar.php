@@ -100,7 +100,9 @@
                           </div><!-- /.container-fluid -->
                         </div>
 
-
+<div class="card-footer">
+                         <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>
+                      </div>
                         <section class="content">
                           <div class="row"> 
                             <div class="col-md-12"> 
@@ -109,6 +111,7 @@
                                   <h3 class="card-title">Listado de Persona</h3>
                                 </div>
                               </div>
+                              
 
                                   <?php
                                     $sql= "SELECT * FROM categorias WHERE idCategoria = '$id'";
@@ -121,8 +124,8 @@
                                             <tr>
                                               <th>#</th>  
                                               <th>ID</th> 
-                                              <th>P Nombre</th>
-                                              <th>P Apellido</th>
+                                              <th>Nombres</th>
+                                              <th>Apellidos</th>
                                               <th>Edad</th>
                                               <th>Ciudad</th>
                                               <th>Barrio</th>

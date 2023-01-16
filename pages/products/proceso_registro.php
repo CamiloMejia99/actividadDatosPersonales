@@ -116,10 +116,14 @@
                                 <div class="card-header">
                                   <h3 class="card-title"> Operación exitosa </h3>
                                 </div>
+                                <div class="card-footer">
+                                    <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>
+                                </div>
                               </div>
                             </div>
                           </div>      
                         </section>
+
                       </div>
                     </div>
                   </div>
