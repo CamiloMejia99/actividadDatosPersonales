@@ -95,9 +95,7 @@
 
                         $id = $_POST['id_categoria'];
                         $pNombre = $_POST['txt_pNombre'];
-                        $sNombre = $_POST['txt_sNombre'];
                         $pApellido = $_POST['txt_pApellido'];
-                        $sApellido = $_POST['txt_sApellido'];
                         $edadUs = $_POST['txt_edad'];
                         $ciudadUs = $_POST['txt_ciudad'];
 
@@ -110,9 +108,7 @@
 
                         $sql="UPDATE categorias SET idCategoria = '$id',
                         primerNombre = '$pNombre',
-                        segundoNombre = '$sNombre',
                         primerApellido = '$pApellido',
-                        segundoApellido = '$sApellido',
                         edad = '$edadUs',
                         ciudad = '$ciudadUs',
                         barrio = '$barrioUs',

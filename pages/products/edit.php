@@ -57,9 +57,7 @@
     <div class="row">
       <div class="col-8">
         <h6>UNIVERSIDAD DE NARIÑO EXTENSIÓN IPIALES</h6>
-        <h6>DESARROLLADO POR:</h6>
-        <h6>IVAN CAMILO MEJIA PARRA</h6>
-        <h6>JESUS DAVID ERAZO REINA</h6>
+        <h6>DESARROLLADO POR GRUPO II</h6>
       </div>
       <div class="col-4">
         <img heigth="100" width="100"src="img\udenar.png" alt="No hay imagen" >
@@ -132,31 +130,16 @@
                                       </div>
 
                                       <div class="form-group">
-                                        <label for="txt_pNombre">Primer Nombre</label>
+                                        <label for="txt_pNombre">Nombres</label>
                                         <input type="text" class="form-control" id="txt_pNombre"  name="txt_pNombre" value="<?php echo $row['primerNombre']?>">
                                       </div>
                                     
 
                                     
                                       <div class="form-group">
-                                        <label for="txt_sNombre">Segundo Nombre</label>
-                                        <input type="text" class="form-control" id="txt_sNombre"  name="txt_sNombre" value="<?php echo $row['segundoNombre']?>">
-                                      </div>
-                                    
-
-                                    
-                                      <div class="form-group">
-                                        <label for="txt_pApellido">Primer Apellido</label>
+                                        <label for="txt_pApellido">Apellidos</label>
                                         <input type="text" class="form-control" id="txt_pApellido"  name="txt_pApellido" value="<?php echo $row['primerApellido']?>">
                                       </div>
-                                    
-
-                                    
-                                      <div class="form-group">
-                                        <label for="txt_sApellido">Segundo Apellido</label>
-                                        <input type="text" class="form-control" id="txt_sApellido"  name="txt_sApellido" value="<?php echo $row['segundoApellido']?>">
-                                      </div>
-                                    
 
                                     
                                       <div class="form-group">

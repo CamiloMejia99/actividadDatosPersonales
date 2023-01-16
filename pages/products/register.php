@@ -119,23 +119,13 @@
                                             </div>
 
                                             <div class="form-group">
-                                              <label for="txt_pNombre">Primer Nombre</label>
+                                              <label for="txt_pNombre">Nombres</label>
                                               <input type="text" class="form-control" id="txt_pNombre"  name="txt_pNombre" placeholder="Primer Nombre">
                                             </div>
-
+                                            
                                             <div class="form-group">
-                                              <label for="txt_sNombre">Segundo Nombre</label>
-                                              <input type="text" class="form-control" id="txt_sNombre"  name="txt_sNombre" placeholder="Segundo Nombre">
-                                            </div>
-
-                                            <div class="form-group">
-                                              <label for="txt_pApellido">Primer Apellido</label>
+                                              <label for="txt_pApellido">Apellidos</label>
                                               <input type="text" class="form-control" id="txt_pApellido"  name="txt_pApellido" placeholder="Primer Apellido">
-                                            </div>
-
-                                            <div class="form-group">
-                                              <label for="txt_sApellido">Segundo Apellido</label>
-                                              <input type="text" class="form-control" id="txt_sApellido"  name="txt_sApellido" placeholder="Segundo Apellido"> 
                                             </div>
 
                                             <div class="form-group">

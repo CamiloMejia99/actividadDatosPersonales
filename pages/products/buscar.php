@@ -123,9 +123,7 @@
                                               <th>#</th>  
                                               <th>ID</th> 
                                               <th>P Nombre</th>
-                                              <th>S Nombre</th> 
                                               <th>P Apellido</th>
-                                              <th>S Apellido</th>
                                               <th>Edad</th>
                                               <th>Ciudad</th>
                                               <th>Barrio</th>
@@ -141,9 +139,7 @@
                                         $i = $i + 1;
                                         $id = $row['idCategoria'];
                                         $pNombre = $row['primerNombre'];
-                                        $sNombre = $row['segundoNombre'];
                                         $pApellido = $row['primerApellido'];
-                                        $sApellido = $row['segundoApellido'];
                                         $edad = $row['edad'];
                                         $ciudad = $row['ciudad'];
 
@@ -160,9 +156,7 @@
                                               <td>'.$i.'</td>
                                               <td>'.$id.'</td>
                                               <td>'.$pNombre.'</td>
-                                              <td>'.$sNombre.'</td>
                                               <td>'.$pApellido.'</td>
-                                              <td>'.$sApellido.'</td>
                                               <td>'.$edad.'</td>
                                               <td>'.$ciudad.'</td>
 

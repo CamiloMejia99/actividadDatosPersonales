@@ -85,9 +85,7 @@
                         
                         $id = $_POST['id_categoria'];
                         $pNombre = $_POST['txt_pNombre'];
-                        $sNombre = $_POST['txt_sNombre'];
                         $pApellido = $_POST['txt_pApellido'];
-                        $sApellido = $_POST['txt_sApellido'];
                         $edadUs = $_POST['txt_edad'];
                         $ciudadUs = $_POST['txt_ciudad']; 
 
@@ -97,8 +95,8 @@
                         $fechaNac = $_POST['txt_fechaN']; 
 
 
-                        $sql = "INSERT INTO categorias(idCategoria,primerNombre, segundoNombre, primerApellido, segundoApellido, edad, ciudad, barrio, correo, telefono, fechaNacimiento)
-                        values ('$id','$pNombre', '$sNombre','$pApellido','$sApellido','$edadUs','$ciudadUs','$barrioUs','$correoUs','$telefonoUs','$fechaNac' )";
+                        $sql = "INSERT INTO categorias(idCategoria,primerNombre, primerApellido, edad, ciudad, barrio, correo, telefono, fechaNacimiento)
+                        values ('$id','$pNombre', '$pApellido','$edadUs','$ciudadUs','$barrioUs','$correoUs','$telefonoUs','$fechaNac' )";
 
 
 
