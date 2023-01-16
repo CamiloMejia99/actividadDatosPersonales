@@ -91,7 +91,7 @@
 
                         <?php
 
-                        include '../../bd/conexion.php';
+                        include '../../bd/conexion.php'; 
 
                         $id = $_POST['id_categoria'];
                         $pNombre = $_POST['txt_pNombre'];
@@ -101,6 +101,12 @@
                         $edadUs = $_POST['txt_edad'];
                         $ciudadUs = $_POST['txt_ciudad'];
 
+                        $barrioUs = $_POST['txt_barrio'];
+                        $correoUs = $_POST['txt_correo'];
+                        $telefonoUs = $_POST['txt_telefono'];
+                        $fechaNac = $_POST['txt_fechaN'];
+                        
+
 
                         $sql="UPDATE categorias SET idCategoria = '$id',
                         primerNombre = '$pNombre',
@@ -108,7 +114,11 @@
                         primerApellido = '$pApellido',
                         segundoApellido = '$sApellido',
                         edad = '$edadUs',
-                        ciudad = '$ciudadUs'
+                        ciudad = '$ciudadUs',
+                        barrio = '$barrioUs',
+                        correo = '$correoUs',
+                        telefono = '$telefonoUs',
+                        fechaNacimiento = '$fechaNac'
                         where idCategoria = '$id'";
 
 

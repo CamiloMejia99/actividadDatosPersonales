@@ -98,7 +98,7 @@
 
 
                         $sql = "INSERT INTO categorias(idCategoria,primerNombre, segundoNombre, primerApellido, segundoApellido, edad, ciudad, barrio, correo, telefono, fechaNacimiento)
-                        values ('$id','$pNombre', '$sNombre','$pApellido','$sApellido','$edadUs','$ciudadUs','$barrioUs','$correoUs','$telefonoUs','$fechaNac')";
+                        values ('$id','$pNombre', '$sNombre','$pApellido','$sApellido','$edadUs','$ciudadUs','$barrioUs','$correoUs','$telefonoUs','$fechaNac' )";
 
 
 

@@ -126,7 +126,7 @@
                                               <th>Barrio</th>
                                               <th>Correo</th>
                                               <th>Telefono</th>
-                                              <th>Fecha de Nacimiento</th>
+                                              <th>Fecha Nacimiento</th>
                                               <th>Opciones</th>
                                             </tr>
                                           </thead>
@@ -142,8 +142,12 @@
                                         $edad = $row['edad'];
                                         $ciudad = $row['ciudad'];
 
+                                        $barrio = $row['barrio'];
+                                        $correo = $row['correo'];
+                                        $telefono = $row['telefono'];
+                                        $fechaNacimiento = $row['fechaNacimiento'];
 
-                                        
+
                                         echo('
                                           
                                           <tbody>
@@ -156,6 +160,13 @@
                                               <td>'.$sApellido.'</td>
                                               <td>'.$edad.'</td>
                                               <td>'.$ciudad.'</td>
+
+                                              <td>'.$barrio.'</td>
+                                              <td>'.$correo.'</td>
+                                              <td>'.$telefono.'</td>
+                                              <td>'.$fechaNacimiento.'</td>
+                                              
+
                                               <td>
                                                  <a href="edit.php?id='. $id.'" class="btn btn-default">
                                                   <i class="fas fa-edit"></i>

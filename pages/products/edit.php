@@ -69,7 +69,7 @@
 
 </font>   
 
-<div class="divisor"></div>
+<div class="divisor"></div> 
 
 <div class="container">
   <div class="row">
@@ -164,12 +164,35 @@
                                         <input type="text" class="form-control" id="txt_edad"  name="txt_edad" value="<?php echo $row['edad']?>">
                                       </div>
                                     
-
                                     
                                       <div class="form-group">
                                         <label for="txt_ciudad">Ciudad</label>
                                         <input type="text" class="form-control" id="txt_ciudad"  name="txt_ciudad" value="<?php echo $row['ciudad']?>">
                                       </div>
+
+                                      <div class="form-group">
+                                        <label for="txt_barrio">Barrio</label>
+                                        <input type="text" class="form-control" id="txt_barrio"  name="txt_barrio" value="<?php echo $row['barrio']?>">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="txt_correo">Correo</label>
+                                        <input type="text" class="form-control" id="txt_correo"  name="txt_correo" value="<?php echo $row['correo']?>">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="txt_telefono">Telefono</label>
+                                        <input type="number" class="form-control" id="txt_telefono"  name="txt_telefono" value="<?php echo $row['telefono']?>">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="txt_fechaN">Fecha de Nacimiento</label>
+                                        <input type="text" class="form-control" id="txt_fechaN"  name="txt_fechaN" value="<?php echo $row['fechaNacimiento']?>">
+                                      </div>
+
+                                      
+
+
                                     </div>
                                 
                                 </div>

@@ -160,12 +160,12 @@
 
                                             <div class="form-group">
                                               <label for="txt_telefono">Telefono</label>
-                                              <input type="number" class="form-control" id="txt_telefono"  name="txt_telefono" placeholder="Ciudad">
+                                              <input type="text" class="form-control" id="txt_telefono"  name="txt_telefono" placeholder="Ciudad">
                                             </div>
 
                                             <div class="form-group">
                                               <label for="txt_fechaN">Fecha de Nacimiento</label>
-                                              <input type="date" class="form-control" id="txt_fechaN"  name="txt_fechaN" placeholder="Ciudad">
+                                              <input type="text" class="form-control" id="txt_fechaN"  name="txt_fechaN" placeholder="Ciudad">
                                             </div>
 
 
