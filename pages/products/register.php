@@ -135,7 +135,7 @@
 
                                             <div class="form-group">
                                               <label for="txt_sApellido">Segundo Apellido</label>
-                                              <input type="text" class="form-control" id="txt_sApellido"  name="txt_sApellido" placeholder="Segundo Apellido">
+                                              <input type="text" class="form-control" id="txt_sApellido"  name="txt_sApellido" placeholder="Segundo Apellido"> 
                                             </div>
 
                                             <div class="form-group">
@@ -148,8 +148,25 @@
                                               <input type="text" class="form-control" id="txt_ciudad"  name="txt_ciudad" placeholder="Ciudad">
                                             </div>
 
+                                            <div class="form-group">
+                                              <label for="txt_barrio">Barrio</label>
+                                              <input type="text" class="form-control" id="txt_barrio"  name="txt_barrio" placeholder="Ciudad">
+                                            </div>
 
+                                            <div class="form-group">
+                                              <label for="txt_correo">Correo</label>
+                                              <input type="text" class="form-control" id="txt_correo"  name="txt_correo" placeholder="Ciudad">
+                                            </div>
 
+                                            <div class="form-group">
+                                              <label for="txt_telefono">Telefono</label>
+                                              <input type="number" class="form-control" id="txt_telefono"  name="txt_telefono" placeholder="Ciudad">
+                                            </div>
+
+                                            <div class="form-group">
+                                              <label for="txt_fechaN">Fecha de Nacimiento</label>
+                                              <input type="date" class="form-control" id="txt_fechaN"  name="txt_fechaN" placeholder="Ciudad">
+                                            </div>
 
 
                                   </div>
