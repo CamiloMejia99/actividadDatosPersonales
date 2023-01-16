@@ -57,7 +57,8 @@
     <div class="row">
       <div class="col-8">
         <h6>UNIVERSIDAD DE NARIÑO EXTENSIÓN IPIALES</h6>
-        <h6>DESARROLLADO POR GRUPO II</h6>
+        <h6>DESARROLLADO POR:</h6>
+        <h6>GRUPO 2</h6>
       </div>
       <div class="col-4">
         <img heigth="100" width="100"src="img\udenar.png" alt="No hay imagen" >
