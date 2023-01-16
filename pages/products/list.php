@@ -115,7 +115,7 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>#</th> 
+                                              <th>#</th>  
                                               <th>ID</th> 
                                               <th>P Nombre</th>
                                               <th>S Nombre</th> 
@@ -123,6 +123,10 @@
                                               <th>S Apellido</th>
                                               <th>Edad</th>
                                               <th>Ciudad</th>
+                                              <th>Barrio</th>
+                                              <th>Correo</th>
+                                              <th>Telefono</th>
+                                              <th>Fecha de Nacimiento</th>
                                               <th>Opciones</th>
                                             </tr>
                                           </thead>
@@ -137,6 +141,9 @@
                                         $sApellido = $row['segundoApellido'];
                                         $edad = $row['edad'];
                                         $ciudad = $row['ciudad'];
+
+
+                                        
                                         echo('
                                           
                                           <tbody>

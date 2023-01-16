@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-01-2023 a las 03:28:07
+-- Tiempo de generación: 16-01-2023 a las 21:42:23
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -34,16 +34,19 @@ CREATE TABLE `categorias` (
   `primerApellido` varchar(100) COLLATE utf8_bin NOT NULL,
   `segundoApellido` varchar(100) COLLATE utf8_bin NOT NULL,
   `edad` int(100) NOT NULL,
-  `ciudad` varchar(30) COLLATE utf8_bin NOT NULL
+  `ciudad` varchar(30) COLLATE utf8_bin NOT NULL,
+  `barrio` varchar(100) COLLATE utf8_bin NOT NULL,
+  `correo` varchar(100) COLLATE utf8_bin NOT NULL,
+  `telefono` int(10) NOT NULL,
+  `fechaNacimiento` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Volcado de datos para la tabla `categorias`
 --
 
-INSERT INTO `categorias` (`idCategoria`, `primerNombre`, `segundoNombre`, `primerApellido`, `segundoApellido`, `edad`, `ciudad`) VALUES
-('1', 'Iván', 'Nicanor', 'Lopez', 'Parra', 23, 'Ipiales'),
-('3', 'Oscar', 'Ricardo', 'Mejia', 'Parra', 27, 'Ipiales');
+INSERT INTO `categorias` (`idCategoria`, `primerNombre`, `segundoNombre`, `primerApellido`, `segundoApellido`, `edad`, `ciudad`, `barrio`, `correo`, `telefono`, `fechaNacimiento`) VALUES
+('123', 'Iván', 'Camilo', 'Mejia', 'Parra', 23, 'Ipiales', '', '', 0, NULL);
 
 --
 -- Índices para tablas volcadas
