@@ -91,12 +91,12 @@
                               <div class="col-12">
                                 <h1 class="m-0">DATOS PERSONALES</h1>
                               </div>
-                              <a href="register.php"  class="btn btn-success"> Click aqui para registrar </a>
-
-
-                              <label for="id_categoria">Id</label>
-                              
-                              <a href="buscar.php"  class="btn btn-success"> Click aqui para consultar </a>
+                              <div class="form-group">
+                                        
+                                        <label for="id_categoria">Id</label>
+                                        <input type="text" class="form-control" id="id_categoria"  name="id_categoria" value ="<?php $id = $_POST['id_categoria']; ?>">
+                                      </div>
+                              <a   class="btn btn-success"> Click aqui para consultar </a>
                             </div><!-- /.row -->
                           </div><!-- /.container-fluid -->
                         </div>
@@ -107,12 +107,12 @@
                             <div class="col-md-12"> 
                               <div class="card card-primary">
                                 <div class="card-header">
-                                  <h3 class="card-title">Listado de Personas</h3>
+                                  <h3 class="card-title">Listado de Persona</h3>
                                 </div>
                               </div>
 
                                   <?php
-                                    $sql= "SELECT * FROM categorias";
+                                    $sql= "SELECT * FROM categorias WHERE idCategoria = '$id'";
                                     $i = 0;
                                     if($resultado = $conexion->query($sql)){
                                       echo('
