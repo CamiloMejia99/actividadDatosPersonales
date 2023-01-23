@@ -81,30 +81,35 @@
                         <?php
 
                         include '../../bd/conexion.php';
+                        $id = $_POST['id'];
+                        $pNombre = $_POST['pNombre'];
+                        $pApellido = $_POST['pApellido'];
+                        $edad = $_POST['edad'];
+                        $comuna = $_POST['comuna']; 
+                        $correo = $_POST['correo'];
+                        $telefono = $_POST['telefono'];
+                        $res="";
+
+                        $sql1 = "SELECT * FROM `usuario` WHERE id=$id;";
+                        $sql = "INSERT INTO usuario(id,pNombre, pApellido, edad, comuna,  correo, telefono)
+                        values ('$id','$pNombre', '$pApellido','$edad','$comuna','$correo','$telefono' )";
+
+
+                        if($conexion->query($sql1) == TRUE) {
+                          
+                          $res="ya existe usuario con cedula $id";
+
+                        }else
+                        {
+                            if ($conexion->query($sql) == TRUE) {
+                            $res="Registro exitoso";
+                            
+                          }
+                          else{
+                            $res="Registro rechazado";
+                          }
+                        }
                         
-                        $id = $_POST['id_categoria'];
-                        $pNombre = $_POST['txt_pNombre'];
-                        $pApellido = $_POST['txt_pApellido'];
-                        $edadUs = $_POST['txt_edad'];
-                        $ciudadUs = $_POST['txt_ciudad']; 
-
-                        $barrioUs = $_POST['txt_barrio'];
-                        $correoUs = $_POST['txt_correo'];
-                        $telefonoUs = $_POST['txt_telefono'];
-                        $fechaNac = $_POST['txt_fechaN']; 
-
-
-                        $sql = "INSERT INTO categorias(idCategoria,primerNombre, primerApellido, edad, ciudad, barrio, correo, telefono, fechaNacimiento)
-                        values ('$id','$pNombre', '$pApellido','$edadUs','$ciudadUs','$barrioUs','$correoUs','$telefonoUs','$fechaNac' )";
-
-
-
-                        if ($conexion->query($sql) == TRUE) {
-                          echo "Registro exitoso";
-                        }
-                        else{
-                          echo "Registro rechazado";
-                        }
                         ?>
 
                         <section class="content">
@@ -114,7 +119,8 @@
                               <!-- general form elements -->
                               <div class="card card-success">
                                 <div class="card-header">
-                                  <h3 class="card-title"> Operación exitosa </h3>
+                                  <h3 class="card-title"> <?php echo $res?>
+                                   </h3>
                                 </div>
                                 <div class="card-footer">
                                     <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>

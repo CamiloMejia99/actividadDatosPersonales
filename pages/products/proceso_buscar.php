@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eliminar</title>
+  <title>consultar</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/icon_pag.png">
@@ -86,7 +86,7 @@
                           <div class="container-fluid">
                             <div class="row mb-2">
                               <div class="col-sm-6">
-                                <h1 class="m-0">Eliminación de Datos</h1>
+                                <h1 class="m-0"> Datos consultados</h1>
                               </div><!-- /.col -->
                             </div><!-- /.row -->
                           </div><!-- /.container-fluid -->
@@ -95,56 +95,79 @@
 
                         <?php
                         include '../../bd/conexion.php';
-                        $id = $_GET["id"]; 
+                        
+                        $id = $_POST['idBuscar'];
+                        $sql = "SELECT * FROM usuario WHERE id = '$id'";
+                        $i = 0;
+                        if ($resultado = $conexion->query($sql)) {
+                          echo ('
+                                <div class="card-body table-responsive p-0">
+                                <table class="table table-hover text-nowrap">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>  
+                                      <th>ID</th> 
+                                      <th>Nombres</th>
+                                      <th>Apellidos</th>
+                                      <th>Edad</th>
+                                      <th>comuna</th>
+                                      
+                                      <th>Correo</th>
+                                      <th>Telefono</th>
+                                      
+                                      <th>Opciones</th>
+                                    </tr>
+                                  </thead>
+                              ');
 
-                        $sql = "DELETE FROM usuario WHERE id ='$id'";
+                          while ($row = $resultado->fetch_array()) {
+                            $i = $i + 1;
+                            $id = $row['id'];
+                            $pNombre = $row['pNombre'];
+                            $pApellido = $row['pApellido'];
+                            $edad = $row['edad'];
+                            $comuna = $row['comuna'];
 
 
-                        if($conexion->query($sql) === TRUE) {
-                          echo('
-                            <!-- Main content -->
-                            <section class="content">
-                            <div class="row">
-                            <!-- left column -->
-                            <div class="col-md-12">
-                            <!-- general form elements -->
-                            <div class="card card-success">
-                            <div class="card-header">
-                            <h3 class="card-title"> Operación exitosa </h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <!-- form start -->  
-                            </div>
-                            <!-- /.card -->
-                            </div>
-                            </div>      
-                            </section>
-                            ');
+                            $correo = $row['correo'];
+                            $telefono = $row['telefono'];
+
+
+
+                            echo ('
+                                  
+                                  <tbody>
+                                    <tr>
+                                      <td>' . $i . '</td>
+                                      <td>' . $id . '</td>
+                                      <td>' . $pNombre . '</td>
+                                      <td>' . $pApellido . '</td>
+                                      <td>' . $edad . '</td>
+                                      <td>' . $comuna . '</td>
+
+                                     
+                                      <td>' . $correo . '</td>
+                                      <td>' . $telefono . '</td>
+                                      
+                                      
+
+                                      <td>
+                                         <a href="edit.php?id=' . $id . '" class="btn btn-default">
+                                          <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a href="proceso_eliminar.php?id=' . $id . '" class="btn btn-default, table__item__link">
+                                          <i class="fas fa-trash"></i>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                ');
+                          }
+                          echo ('
+                                    </tbody>
+                                    </table>
+                                ');
                         }
-                        else{
-                          echo('
-                            <!-- Main content -->
-                            <section class="content">
-                            <div class="row">
-                            <!-- left column -->
-                            <div class="col-md-12">
-                            <!-- general form elements -->
-                            <div class="card card-danger">
-                            <div class="card-header">
-                            <h3 class="card-title"> Operación fallida </h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <!-- form start -->  
-                            </div>
-                            <!-- /.card -->
-                            </div>
-                            </div>      
-                            </section>
-                            ');
-                        }
-                          mysqli_close($conexion);  // Cierra la conexion
-
-                          ?>
+                        ?>
                           </div>
                           <div class="card-footer">
                               <a href="list.php"  class="btn btn-info"> ← REGRESAR AL LISTADO </a>

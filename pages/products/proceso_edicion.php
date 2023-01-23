@@ -92,31 +92,28 @@
 
                         include '../../bd/conexion.php'; 
 
-                        $id = $_POST['id_categoria'];
-                        $pNombre = $_POST['txt_pNombre'];
-                        $pApellido = $_POST['txt_pApellido'];
-                        $edadUs = $_POST['txt_edad'];
-                        $ciudadUs = $_POST['txt_ciudad'];
+                        $id = $_POST['id'];
+                        $pNombre = $_POST['pNombre'];
+                        $pApellido = $_POST['pApellido'];
+                        $edad = $_POST['edad'];
+                        $comuna = $_POST['comuna'];
 
-                        $barrioUs = $_POST['txt_barrio'];
-                        $correoUs = $_POST['txt_correo'];
-                        $telefonoUs = $_POST['txt_telefono'];
-                        $fechaNac = $_POST['txt_fechaN'];
+                        
+                        $correo = $_POST['correo'];
+                        $telefono = $_POST['telefono'];
+                        
                         
 
 
-                        $sql="UPDATE categorias SET idCategoria = '$id',
-                        primerNombre = '$pNombre',
-                        primerApellido = '$pApellido',
-                        edad = '$edadUs',
-                        ciudad = '$ciudadUs',
-                        barrio = '$barrioUs',
-                        correo = '$correoUs',
-                        telefono = '$telefonoUs',
-                        fechaNacimiento = '$fechaNac'
-                        where idCategoria = '$id'";
-
-
+                        $sql="UPDATE usuario SET id = '$id',
+                        pNombre = '$pNombre',
+                        pApellido = '$pApellido',
+                        edad = '$edad',
+                        comuna = '$comuna',
+                        
+                        correo = '$correo',
+                        telefono = '$telefono'
+                        where id='$id'";
 
                         if($conexion->query($sql) === TRUE) {
                           echo('
